@@ -1,0 +1,146 @@
+.navbar{
+    font-style: italic;
+  background-color:lightcoral;
+  font-size: large;
+
+}
+
+.itme{
+
+    list-style: none;
+    border: lightcoral solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:10px;
+    background-color: whitesmoke;
+    filter:opacity(30%);
+    
+
+} 
+ 
+
+
+body{
+  
+    width: 100%;
+    font-style:oblique;    
+} 
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+
+.container {
+    text-align: start;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border:blanchedalmond solid;
+    background-color:rgb(223, 241, 243) ;
+    padding: 3%;
+    margin: 3px;
+}
+
+.container img{
+width: 50%;
+height: 100%;
+border: lightcoral solid;
+}
+
+.container p{
+
+    margin-top: 10px;
+    font-size: 20px;
+    
+    } 
+
+
+.content-style{
+   
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 50px auto;
+    width: 400px;
+}
+
+.row{
+    border:blanchedalmond solid;
+    font-style: initial;
+
+}
+
+ .log-in{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 50px auto;
+    width: 400px;
+    border: paleturquoise solid;
+    padding: 20px;
+
+} 
+ 
+
+
+
+.table-table-striped{
+    border: paleturquoise solid;
+    background-color: rgb(240, 182, 201);
+
+}
+
+.git-in{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 50px auto;
+    padding: 40px;
+    border: paleturquoise solid;
+   
+}
+
+.shoping-infromtion{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 50px auto;
+    padding: 40px;
+    border: paleturquoise solid;
+
+}
+
+.card-1{
+    display: block;
+    flex-direction: column;
+    width: 90%;
+    margin: 7px auto;
+    padding: 6x;
+    border: blanchedalmond solid;
+  
+   
+}
+
+
+.card-1 .card-header-1
+{
+    border: rgb(240, 182, 201) solid;
+   
+}
+.card-1 .card-body-1{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 50%;
+    margin: 7px auto;
+    padding: 10px;
+    border: paleturquoise solid;
+
+    
+
+
+}
