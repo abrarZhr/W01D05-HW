@@ -46,7 +46,7 @@ body{
 }
 
 .container img{
-width: 50%;
+width: 70%;
 height: 100%;
 border: lightcoral solid;
 }
@@ -68,11 +68,11 @@ border: lightcoral solid;
     width: 400px;
 }
 
-.row{
+/* .row{
     border:blanchedalmond solid;
     font-style: initial;
 
-}
+} */
 
  .log-in{
     display: flex;
@@ -143,4 +143,190 @@ border: lightcoral solid;
     
 
 
+}
+
+.content-2 img{
+    width: 50%;
+}
+
+
+
+.row-cart{
+
+    display:flex;;
+    width: 50%;
+    margin: 7px auto;
+    padding: 100px;
+    border: paleturquoise solid;
+
+
+    
+}
+
+.amount{
+
+    display: flex;
+    flex-direction: column;
+    width: 500%;
+    margin: 100px auto;
+    padding: 10px;
+
+  
+}
+
+
+.content{
+
+    
+    display: flex; 
+    flex-wrap: wrap;
+    align-items:center;
+    border:blanchedalmond solid;
+    background-color:rgb(223, 241, 243) ;
+
+    margin: 50px;
+
+}
+
+.prodect {
+
+    
+    border: 0.5px solid aqua;  
+    margin: 50px;
+    padding: 10px;
+    
+  
+
+}
+
+.displayCart img{
+
+    width: 70px;
+    
+
+}
+
+.displayCart {
+
+    margin-left: 100px;
+
+}
+
+
+.displayItem{
+    display:flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    margin-left: 100px;
+    margin-top: 50px;
+    font-size: 12px;
+}
+
+.item{
+    width: 100px;
+    border-radius: 20px;
+    margin: 10px;
+    background-color: cyan;
+}
+
+.names{
+
+    width: 100px;
+    border-radius: 20px;
+    margin: 10px;
+    background-color: cyan;
+
+}
+
+.price{
+    width: 100px;
+    border-radius: 20px;
+    margin: 10px;
+    background-color: cyan;
+}
+
+.quantity{
+
+    width: 100px;
+    border-radius: 20px;
+    margin: 10px;
+    background-color: cyan;
+
+}
+
+.total{
+
+    width: 100px;
+    border-radius: 20px;
+    margin: 10px;
+    background-color: cyan;
+
+}
+
+.cartlist{
+    display: flex;
+
+}
+
+.forImage{
+    width: 100px;
+    margin: 10px;
+
+}
+
+.forname{
+    width: 100px;
+    margin: 10px;
+
+}
+.forprice{
+    width: 100px;
+    margin: 10px;
+
+}
+
+.forquantity{
+    width: 100px;
+    margin: 10px;
+
+}
+
+.fortotal{
+    width: 100px;
+    margin: 10px;
+
+}
+
+.removeItem button{
+    cursor: pointer;
+    background-color:cornsilk;
+    width: 70px;
+    height: 20px;
+
+}
+
+.totalprice{
+color:#fff;
+margin-top: 100px;
+margin-left: 100px;
+width: 400px;
+background-color:  rgb(240, 182, 201) ;
+justify-content: space-between;
+text-transform: uppercase;
+text-align:center;
+}
+.total-1{
+    margin: 10px;
+
+}
+.priceview{
+    margin: 10px;
+}
+
+.form table {
+    background-color:floralwhite;
+    padding: 10px;
+    margin-left:100px ;
 }
