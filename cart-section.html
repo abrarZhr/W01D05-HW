@@ -23,17 +23,23 @@
                 <tr>
                 <td><label for=""> Enter the coupon code </label></td>
                 <td>
-                <input type="text" value="aa">
-                <input type="button" value="Apply Coupon">
+                <input id="coupon" type="text" >
+                <input type="button" id="apply" value="Apply Coupon"><br>
+                <h3>The tax</h3>
+                <p id="taxValue"></p>
+                <H3 >the total</H3>
+                <p id = "Total"></p>
+              
                 </td>
                 </tr>
 
                 <tr>
                 <td><label for="collection-delivery"> Collection-Delivery </label></td>
                 <td>
-                <select name="" id="collection-delivery">
-                    <option value=""> Collection </option>
-                    <option value=""> Delivery</option>
+                <label>Delivery</label>
+               <input onclick= "subTotal(this)" name=" div" type="radio" id="Delivery" >
+               <label>Collection</label>
+               <input onclick= "subTotal(this)" name=" div" type="radio" id="Collection" >
                 </select>
                 </td>
                 </tr>

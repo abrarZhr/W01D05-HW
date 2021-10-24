@@ -83,54 +83,95 @@ function dispConrtItem (){
 dispConrtItem();
 
 function cartNumberDisplay(){
-    let cartNumber =0;
-    let cartItem = JSON.parse(localStorage.getItem('prdInCart'))
-    cartItem.forEach(item => {
-        cartNumber =item.quantity += cartNumber;
+  let cartNumber =0;
+     let cartItem = JSON.parse(localStorage.getItem('prdInCart'))
+     cartItem.forEach(item => {
+         cartNumber =item.quantity += cartNumber;
 
-    });
-    document.querySelector('.cart span')
+     });
+     document.querySelector('.cart span')
       
   
 
-}
-cartNumberDisplay();
-
-const removeitem =document.getElementsByClassName('removeItem')
-for( let i=0 ; i<removeitem.length ; i++){
-
-    let removebut = removeitem[i]
-
-    removebut.addEventListener('click' , () =>{
-        console.log("remove")
-        let cartItem = JSON.parse(localStorage.getItem('prdInCart'))
-        console.log(event.target.parentElement.parentElement.children[1].children[0].textContent);
-        cartItem.forEach(item =>{
-
-            if(item.name != event.target.parentElement.parentElement.children[1].children[0].textContent){
-            products.push(item)
-        }
-
-     });
-
-        localStorage.setItem('prdInCart' , JSON.stringify(products))
-
-         window.location.reload()
-
-    })
-}
+ }
+ cartNumberDisplay();
 
 
+
+
+     removebut.addEventListener('click' , () =>{
+         console.log("remove")
+         let cartItem = JSON.parse(localStorage.getItem('prdInCart'))
+         console.log(event.target.parentElement.parentElement.children[1].children[0].textContent);
+         cartItem.forEach(item =>{
+
+             if(item.name != event.target.parentElement.parentElement.children[1].children[0].textContent){
+             products.push(item)
+         }
+
+      });
+    
+         localStorage.setItem('prdInCart' , JSON.stringify(products))
+
+          window.location.reload()
+
+     })
+    
 
 function subTotal() {
     let subTotal = 0;
+    let VAT = 0;
+    let total=0;
+    let Delivery=0;
+
+  
+   
+
     let cartItem = JSON.parse(localStorage.getItem('prdInCart'))
     cartItem.map(item =>{
         subTotal = item.totalprice += subTotal;
 
     });
+
+    
+
     console.log(subTotal)
     document.querySelector('.priceview h2').textContent = subTotal;
+  
+
+    if (document.getElementById('Delivery').checked){
+        Delivery=30;
+    }else {
+      Collection=0;
+    }
+
+  
+
+
+    let ds=0;
+    VAT = subTotal*(15/100)
+    total=VAT+subTotal;
+
+    document.getElementById('apply').addEventListener("click",function(){
+        let testcoupon = document.getElementById('coupon').value
+    if (testcoupon == 'abrar'){
+        ds=15;
+        total=total-ds;
+
+    }
+    document.querySelector('.priceview h2').textContent = total
+
+    })
+    
+
+
+
+    document.getElementById('taxValue').innerText=VAT
+    document.getElementById('Total').innerText=total
+
+
+
+
 }
 subTotal()
 
